@@ -16,7 +16,7 @@ end
 if defined?(Spec::Rails)
   Spec::Rails::Example::ControllerExampleGroup.send :include, Remarkable::ActionController::MacroStubs
 
-  Remarkable.include_matchers!(Remarkable::ActionController, Spec::Rails::Example::ControllerExampleGroup)
+  Remarkable.include_matchers!(Remarkable::ActionController, Spec::Rails::Example::FunctionalExampleGroup)
   Remarkable.include_matchers!(Remarkable::ActionController, Spec::Rails::Example::RoutingExampleGroup)
 end
 
